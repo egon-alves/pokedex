@@ -1,0 +1,31 @@
+/* Extra small devices (portrait phones, less than 576px)*/
+@media(min-width: 381px) and (max-width: 575.98px) {
+    body {
+         overflow: hidden;
+         /*  */
+    }
+    .navBarImg {
+        width: 370px;
+        
+    }
+
+    .pokedex-grind { 
+        
+
+
+    }
+    .pokedex-list {
+        min-width: 165px;
+        max-width: 165px;
+        width: 165px;
+        font-size: 12px;
+        align-items: center;
+        margin: 5px;
+        border-radius: 10px;
+       
+    }
+    .pokedex-list img {
+      
+
+    }
+}

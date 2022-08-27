@@ -1,0 +1,27 @@
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+        
+    }
+
+    .pokedex-list {
+        min-width: 200px;
+        max-width: 200px;
+        width: 200px;
+        font-size: 14px;
+        align-items: center;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .pokedex-list img {
+      
+        width: 185px;
+    }
+    .pokedex-list h1 {
+        text-align: center;
+        background-color: aliceblue;
+        width: 185px;
+     }
+}
+          
+    

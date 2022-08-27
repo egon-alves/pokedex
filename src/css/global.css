@@ -1,0 +1,19 @@
+@import url('./query/desktop.css');
+@import url('./query/desktopLarger.css');
+@import url('./query/landscapePhone.css');
+@import url('./query/portraitPhone.css');
+@import url('./query/tablet.css');
+@import url('./query/SuperSmall.css');
+body {
+    background-color: #A7DBF1;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    flex-wrap: wrap;
+
+
+
+}
