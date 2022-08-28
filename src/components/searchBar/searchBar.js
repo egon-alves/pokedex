@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { SearchPokemon } from '../api'
-// import "./searchBar.css"
+import Popup from "../popup/popup";
+import "./searchBar.css"
 
 
 export const SearchBar = () => {
@@ -19,6 +20,12 @@ export const SearchBar = () => {
 
     }
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const togglePopup = () => {
+        setIsOpen(!isOpen);
+    }
+
     return (
         <div className="">
             <div className="">
@@ -26,23 +33,37 @@ export const SearchBar = () => {
                     <input placeholder="Buscar Pokemon" onChange={onChangeHandler}></input>
                 </div>
                 <div className="">
-                    <button onClick={OnButtonClickHandler} > Buscar</button>
+                    <button onClick={() => {
+
+                        OnButtonClickHandler();
+
+                        togglePopup()
+
+                    }} > Buscar</button>
                 </div>
             </div>
+            {pokemon ? (
+  <div className="CardSearch">
+     
+ <Popup content={
+     < div className="card">
+     <img src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name}></img>
+     <h1>Nome: {pokemon.name}</h1>
+     <h2>Peso: {pokemon.weight}</h2>
+     <h2>lista de movimentos : {pokemon.weight}</h2>
+     <h2>lista de habilidades com a descricao da abilidade: {pokemon.weight}</h2>
+     <h2>tipo do pokemon: {pokemon.types[0].type.url}</h2>
+     </div>
+ } 
+  handleClose={togglePopup} 
+ />
+ </div>
+) : null}
+          
+           
+             
 
             
-            <div className="CardSearch">
-                {pokemon ? (
-                    <div className="card">
-                        <img src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name}></img>
-                        <h1>Nome: {pokemon.name}</h1>
-                        <h2>Peso: {pokemon.weight}</h2>
-
-                    </div>
-
-                ) : null}
-
-            </div>
         </div>
 
     )
