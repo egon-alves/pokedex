@@ -1,15 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { getPokemons } from './components/api';
+import React, { useEffect, useState, } from 'react';
+import { getPokemonData, getPokemons } from './components/api';
 import { Navbar } from './components/navbar/navbar';
 import { Pokedex } from './components/pokedex/pokedex';
 import { SearchBar } from './components/searchBar/searchBar';
-import "./css/global.css"
-
-
-
-
-
-
+// CSS style
+import './css/global.css'
 export default function App() {
 
   const [loading, setLoading] = useState(false)
@@ -19,8 +14,13 @@ export default function App() {
   const fetchPokemons = async () => {
     try {
       setLoading(true)
-      const result = await getPokemons();
-      setPokemons(result)
+      const data = await getPokemons();
+      const promises = data.results.map(async (pokemon) => {
+        return await getPokemonData(pokemon.url)
+      })
+
+      const results = await Promise.all(promises)
+      setPokemons(results)
       setLoading(false)
     } catch (error) {
       console.log('fetchPokemon Error', error)
@@ -28,20 +28,23 @@ export default function App() {
   }
 
   useEffect(() => {
-    console.log('Cheguei aqui 22');
+
     fetchPokemons()
 
   }, [])
 
+
+
   return (
-    <div className='container'>
+    <div className='container' >
+     
       <Navbar />
-      {/* <SearchBar/> */}
-      <div className='navBar'></div>
-      <div className='container-list'>
-        <Pokedex pokemons={pokemons.results} loading={loading} />
+      <div className='card-list'>
+        <Pokedex pokemons={pokemons} loading={loading} />
       </div>
     </div>
 
   );
+
+
 }

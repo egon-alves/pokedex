@@ -1,9 +1,9 @@
 import React from "react";
-import './pokedex.css'
-import '../../App.css'
+import "./pokedex.css"
+import { Pokemon } from "../pokemon/pokemon";
 export const Pokedex = (props) => {
     const { pokemons, loading } = props
-    console.log('Pokedex aqui ', pokemons );
+    
     
     return (
         <div>
@@ -12,19 +12,13 @@ export const Pokedex = (props) => {
             {loading  || !pokemons ? (
                 <div>Arguarde...</div>
             ) : (
-                <div className="pokedex-grind" >
+                <div className="card" >
                     {pokemons && pokemons.map(
                         (pokemon, index) => {
                             return (
-                                <div className="pokedex-list" hrf='#'>
-                                    
-                                    <img src="https://picsum.photos/120/120" alt={pokemon.name}></img>
-                                    
-                                    
-                                    <h1> {pokemon.name}</h1>
-                                   
-                                
-                                </div>
+
+                                <Pokemon pokemon={pokemon} key={index} />
+                               
                             )
                         }
                     )

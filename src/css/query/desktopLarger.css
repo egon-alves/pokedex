@@ -3,35 +3,9 @@
     body {
         
     }
-    .pokedex-list {
-        min-width: 200px;
-        max-width: 200px;
-        width: 200px;
-        font-size: 14px;
-        align-items: center;
-        margin: 5px;
-        border-radius: 10px;
-    }
-    .pokedex-list img {
-      
-        width: 185px;
-    }
-    .pokedex-list h1 {
-        text-align: center;
-        background-color: aliceblue;
-        width: 185px;
-     }
-
-     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-       
-        flex-wrap: wrap;
-    
+    .container {
         margin: 0 auto;
         width: 1200px;
-    
-    
     }
+  
 }

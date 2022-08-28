@@ -4,32 +4,7 @@
         
         overflow: hidden
     }
-
     .navBarImg {
-        width: 400px;
-        
-    }
-
-    .pokedex-grind { 
-        
-
-    }
-    .pokedex-list {
-
-       
-       
-    }
-
-    .searchBar {
-        width: 380px;
-        height: 50px;
-    }
-    .searchBarContainer input {
-        width: 220px;
-        height: 35px;
-    }
-    .searchBarBtn button {
-        height: 37px; 
-        width: 83px;
+        width: 381px;
     }
 }

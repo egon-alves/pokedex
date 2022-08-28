@@ -4,16 +4,43 @@
 @import url('./query/portraitPhone.css');
 @import url('./query/tablet.css');
 @import url('./query/SuperSmall.css');
-body {
-    background-color: #A7DBF1;
+html {
+    overflow: hidden;
 }
 .container {
-    display: flex;
-    flex-direction: column;
+    
+      display: flex;
     align-items: center;
+    flex-direction: column;
+    
+    flex-direction: column;
+    
+    
+}
+
+.card-list {
    
-    flex-wrap: wrap;
+    flex-direction: row;
+}
 
+a:hover, a:link , a:active {
+  text-decoration: none;
+  color: black;
+  
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,500&display=swap');
+
+body {
+
+    /* background-color:#D9A566  */
+
+ 
+  font-family: 'Source Code Pro', monospace;
+
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
 
 }

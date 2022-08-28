@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { SearchPokemon } from '../api'
-import "./searchBar.css"
+// import "./searchBar.css"
 
 
 export const SearchBar = () => {
@@ -20,12 +20,12 @@ export const SearchBar = () => {
     }
 
     return (
-        <div className="searchBarContainer">
-            <div className="searchBar">
+        <div className="">
+            <div className="">
                 <div >
                     <input placeholder="Buscar Pokemon" onChange={onChangeHandler}></input>
                 </div>
-                <div className="searchBarBtn">
+                <div className="">
                     <button onClick={OnButtonClickHandler} > Buscar</button>
                 </div>
             </div>
