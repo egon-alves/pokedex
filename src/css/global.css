@@ -1,27 +1,22 @@
-@import url('./query/desktop.css');
+/* @import url('./query/desktop.css');
 @import url('./query/desktopLarger.css');
 @import url('./query/landscapePhone.css');
 @import url('./query/portraitPhone.css');
 @import url('./query/tablet.css');
-@import url('./query/SuperSmall.css');
+@import url('./query/SuperSmall.css'); */
 
-html {}
+ .container {  
+  display: flex ;
 
-.container {
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  flex-direction: column;
-
-
+  flex-wrap: wrap;
 }
 
-.card-list {
-
-  flex-direction: row;
+.card-list { border: solid red ;
+  width: 800px;
+  flex-direction: column-reverse !important;
+  
 }
+/*
 
 a:hover,
 a:link,
@@ -35,8 +30,6 @@ a:active {
 
 body {
 
-  /* background-color:#D9A566  */
-
 
   font-family: 'Source Code Pro', monospace;
 
@@ -45,4 +38,4 @@ body {
 code {
   font-family: 'Source Code Pro', monospace;
 
-}
+} */

@@ -9,7 +9,7 @@ import { lightTheme, darkTheme } from './components/theme/theme';
 import GlobalTheme from "./globals";
 import { ButtonChange } from './components/button/button-thema/button-thema';
 // CSS style
-import './css/global.css'
+// import './css/global.css'
 
 export default function App() {
   const [pokemons, setPokemons] = useState([])
@@ -48,18 +48,19 @@ export default function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Fragment>
         <GlobalTheme />
-
+        {/* <Navbar />
+          <SearchBar/> */}
         <div className='container' >
-          <Navbar />
-          <SearchBar></SearchBar>
-          <ButtonChange onClick={toggleTheme}
+        
+          {/* <ButtonChange onClick={toggleTheme}
           > {theme === "light" ? "DARK" : "LIGHT "}
-          </ButtonChange>
+          </ButtonChange> */}
 
 
           <div className='card-list'>
             <Pokedex pokemons={pokemons} loading={loading} />
           </div>
+
         </div>
       </Fragment>
     </ThemeProvider>

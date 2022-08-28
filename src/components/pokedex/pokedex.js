@@ -1,5 +1,6 @@
 import React from "react";
-import "./pokedex.css"
+// import "./pokedex.css"
+// import '../../css/global.css'
 import { Pokemon } from "../pokemon/pokemon";
 export const Pokedex = (props) => {
     const { pokemons, loading } = props
@@ -10,7 +11,7 @@ export const Pokedex = (props) => {
             
         
             {loading  || !pokemons ? (
-                <div>Arguarde...</div>
+                <div>Carregando</div>
             ) : (
                 <div className="card" >
                     {pokemons && pokemons.map(

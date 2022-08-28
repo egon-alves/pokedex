@@ -1,25 +1,18 @@
 
 
-.cards {
-    cursor: pointer;
-    border: black 4px solid;
+.cards {  
+ 
     text-align: center;
-    align-content: space-between;
     margin: 5px;
     padding-top: 0px;
     border-radius: 10px;
     background-color: #A66617;
-
     width: 180px;
-
 }
 
-
-
-.cards-name {
+.cards-name { 
     font-weight: 400;
     display: flex;
-    justify-content:flex-start;
     align-items: center;
     background-color: white;
     margin: 6px 6px 6px 6px;
@@ -36,8 +29,8 @@
     height: 15px;
     width: 50px;
     border-radius: 10px 10px 0px 0px;
-    /* text-align: center; */
-}
+    text-align: center; 
+ }
 
 .cards a {
     text-decoration: none;
@@ -45,8 +38,8 @@
     text-transform: capitalize;
 }
 
-.cards .pokebola {
+.cards .pokebola { 
 
     width: 50px;
     
-}
+} 
