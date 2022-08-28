@@ -3,6 +3,9 @@ import { getPokemonData, getPokemons } from './components/api';
 import { Navbar } from './components/navbar/navbar';
 import { Pokedex } from './components/pokedex/pokedex';
 import { SearchBar } from './components/searchBar/searchBar';
+// aplication toggler button 
+
+
 // CSS style
 import './css/global.css'
 export default function App() {
@@ -36,13 +39,16 @@ export default function App() {
 
 
   return (
-    <div className='container' >
-     
-      <Navbar />
-      <div className='card-list'>
-        <Pokedex pokemons={pokemons} loading={loading} />
+   
+      <div className='container' >
+
+        <Navbar />
+        <div className='card-list'>
+          <Pokedex pokemons={pokemons} loading={loading} />
+        </div>
       </div>
-    </div>
+
+
 
   );
 
