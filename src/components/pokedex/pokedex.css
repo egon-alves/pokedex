@@ -1,6 +1,8 @@
-.card { 
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
+.pokemon-list {
+    
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+

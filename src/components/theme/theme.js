@@ -2,7 +2,7 @@ export const lightTheme = {
   body: "#D9A566",
   body2: "black",
   text: "black",
-  text2: "white",
+  text2: "black",
   transition: 'all 1.25s linear',
   bd :  "black 2px solid" ,
   bx: '3px 3px 10px black',

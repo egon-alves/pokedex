@@ -1,48 +1,23 @@
-@import url('./query/desktop.css');
-@import url('./query/desktopLarger.css');
-@import url('./query/landscapePhone.css');
-@import url('./query/portraitPhone.css');
-@import url('./query/tablet.css');
-@import url('./query/SuperSmall.css');
+body {
+  font-family: 'Source Code Pro', monospace;
+}
 
-html {}
-
-.container {
+.nav-home {
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-direction: column;
-
-  flex-direction: column;
-
-
 }
 
-.card-list {
+.nav-search {
 
+  display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
-a:hover,
-a:link,
-a:active {
-  text-decoration: none;
-  color: black;
-
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;1,500&display=swap');
-
-body {
-
-  /* background-color:#D9A566  */
-
-
-  font-family: 'Source Code Pro', monospace;
-
-}
-
-code {
-  font-family: 'Source Code Pro', monospace;
+.pokemon-list-menu {
+  width: 900px;
+  margin: 0 auto;
 
 }

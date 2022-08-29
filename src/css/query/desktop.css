@@ -1,15 +1,6 @@
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    body { 
-        
-    }
-    .container {
-        margin: 0 auto;
-        width: 1200px;
-    }
-    .navBarImg {
-        width: 500px;
-    }
+
 
 }
           

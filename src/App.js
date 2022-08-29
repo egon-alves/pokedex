@@ -49,17 +49,26 @@ export default function App() {
       <Fragment>
         <GlobalTheme />
 
-        <div className='container' >
-          <Navbar />
-          <SearchBar></SearchBar>
-          <ButtonChange onClick={toggleTheme}
-          > {theme === "light" ? "DARK" : "LIGHT "}
-          </ButtonChange>
+        {/* aqio nav e heard do site  */}
+        <nav className='nav-home'>
 
+          <header>
 
-          <div className='card-list'>
-            <Pokedex pokemons={pokemons} loading={loading} />
+            <ButtonChange onClick={toggleTheme}
+            > {theme === "light" ? "DARK" : "LIGHT "}
+            </ButtonChange>
+            <Navbar />
+          </header>
+
+          <div className='nav-search'>
+            <SearchBar />
           </div>
+
+        </nav>
+        {/* lista de pokemons em flex  */}
+
+        <div className='pokemon-list-menu'>
+          <Pokedex pokemons={pokemons} loading={loading} />
         </div>
       </Fragment>
     </ThemeProvider>

@@ -6,18 +6,18 @@ export const Pokedex = (props) => {
     
     
     return (
-        <div>
+        <div >
             
-        
             {loading  || !pokemons ? (
                 <div>Arguarde...</div>
             ) : (
-                <div className="card" >
+                <div className="pokemon-list">
                     {pokemons && pokemons.map(
                         (pokemon, index) => {
                             return (
-
-                                <Pokemon pokemon={pokemon} key={index} />
+                                <div >
+                                <Pokemon pokemon={pokemon} key={index} /></div>
+                                
                                
                             )
                         }

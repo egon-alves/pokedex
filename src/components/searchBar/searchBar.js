@@ -27,12 +27,12 @@ export const SearchBar = () => {
     }
 
     return (
-        <div className="">
-            <div className="">
-                <div >
-                    <input placeholder="Buscar Pokemon" onChange={onChangeHandler}></input>
+        <div>
+            <div className="nav-search">
+                <div>
+                    <input className="campo-search" placeholder="Buscar Pokemon" onChange={onChangeHandler}></input>
                 </div>
-                <div className="">
+                <div className="button-search">
                     <button onClick={() => {
 
                         OnButtonClickHandler();
@@ -43,27 +43,27 @@ export const SearchBar = () => {
                 </div>
             </div>
             {pokemon ? (
-  <div className="CardSearch">
-     
- <Popup content={
-     < div className="card">
-     <img src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name}></img>
-     <h1>Nome: {pokemon.name}</h1>
-     <h2>Peso: {pokemon.weight}</h2>
-     <h2>lista de movimentos : {pokemon.weight}</h2>
-     <h2>lista de habilidades com a descricao da abilidade: {pokemon.weight}</h2>
-     <h2>tipo do pokemon: {pokemon.types[0].type.url}</h2>
-     </div>
- } 
-  handleClose={togglePopup} 
- />
- </div>
-) : null}
-          
-           
-             
+                <div>
 
-            
+                    <Popup content={
+                        < div className="card-pokemon-stats">
+                            <img src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name}></img>
+                            <h1>Nome: {pokemon.name}</h1>
+                            <h2>Peso: {pokemon.weight}</h2>
+                            <h2>lista de movimentos : {pokemon.weight}</h2>
+                            <h2>lista de habilidades com a descricao da abilidade: {pokemon.weight}</h2>
+                            <h2>tipo do pokemon: {pokemon.types[0].type.url}</h2>
+                        </div>
+                    }
+                        handleClose={togglePopup}
+                    />
+                </div>
+            ) : null}
+
+
+
+
+
         </div>
 
     )

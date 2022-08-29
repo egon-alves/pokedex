@@ -1,23 +1,17 @@
 
-
-.cards {
-    cursor: pointer;
-    border: black 4px solid;
+.cards { 
+   
     text-align: center;
-    align-content: space-between;
     margin: 5px;
     padding-top: 0px;
     border-radius: 10px;
     background-color: #A66617;
-
-    width: 180px;
-
+    width: 280px;
 }
 
 
-
-.cards-name {
-    font-weight: 400;
+.cards-name { 
+   
     display: flex;
     justify-content:flex-start;
     align-items: center;
@@ -25,28 +19,22 @@
     margin: 6px 6px 6px 6px;
     border-radius: 7px;
     border-bottom: black 2px solid;
+
 }
 
 .cards p {
-    align-items: center;
     background-color: black;
     margin: 0 auto;
-    color: white;
     font-size: 10px;
     height: 15px;
     width: 50px;
     border-radius: 10px 10px 0px 0px;
-    /* text-align: center; */
 }
-
 .cards a {
     text-decoration: none;
     font-size: 1em;
     text-transform: capitalize;
 }
-
 .cards .pokebola {
-
     width: 50px;
-    
 }

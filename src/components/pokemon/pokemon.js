@@ -1,5 +1,6 @@
 import React from "react";
 import './pokemon.css'
+import '../../globals.js'
 export const Pokemon = (props) => {
     const { pokemon } = props
 
