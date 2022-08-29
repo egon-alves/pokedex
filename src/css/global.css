@@ -11,12 +11,7 @@
   flex-wrap: wrap;
 }
 
-.card-list { border: solid red ;
-  width: 800px;
-  flex-direction: column-reverse !important;
-  
-}
-/*
+
 
 a:hover,
 a:link,
@@ -38,4 +33,4 @@ body {
 code {
   font-family: 'Source Code Pro', monospace;
 
-} */
+}

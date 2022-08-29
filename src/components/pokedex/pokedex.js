@@ -1,5 +1,5 @@
 import React from "react";
-// import "./pokedex.css"
+import "./pokedex.css"
 // import '../../css/global.css'
 import { Pokemon } from "../pokemon/pokemon";
 export const Pokedex = (props) => {
@@ -17,8 +17,9 @@ export const Pokedex = (props) => {
                     {pokemons && pokemons.map(
                         (pokemon, index) => {
                             return (
-
+                                <div className="card-list">
                                 <Pokemon pokemon={pokemon} key={index} />
+                                </div>
                                
                             )
                         }

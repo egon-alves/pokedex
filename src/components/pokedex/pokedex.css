@@ -1,0 +1,8 @@
+.card { width: 900px; border: solid red 2px;
+    display: flex; 
+    flex-direction: row;
+}
+.card-list{
+    display: flex;
+    flex-direction: row;
+}
