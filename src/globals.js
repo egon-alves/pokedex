@@ -4,37 +4,43 @@ export default createGlobalStyle`
   *,
   *::after,
   *::before {
-    box-sizing: border-box;
   }
 
   body {
     background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.text1};
+    transition: ${({ theme }) => theme.transition};
   }
 
-  }
+ 
   .cards {
     border:${({ theme }) => theme.bd};
-    color: ${({ theme }) => theme.text};
-  
-.cards-name {
-  color: ${({ theme }) => theme.text2};
-  font-size: 1.2em;
-  font-weight: bold;
-}
+    color:${({ theme }) => theme.text2} ;
+  }
 
-
+  .theme {
+    
+    color:${({ theme }) => theme.text} ;
+    transition:all .15s linear;
+    font-size:bold;
+    font-weight: bold;
+  }
 
 
 .cards:hover, button:hover {
   box-shadow: ${({ theme }) => theme.bx};
-  transition: all 1.1s linear;
+  transition: all .1s linear;
 }
 .cards p {
   background: ${({ theme }) => theme.body2};
-  color: ${({ theme }) => theme.text2};
+  color: ${({ theme }) => theme.text};
 
 }
 
+
+.box {
+  background: ${({ theme }) => theme.body} ;
+  border:${({ theme }) => theme.bd};
+}
 `;
 

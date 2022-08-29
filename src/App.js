@@ -54,7 +54,7 @@ export default function App() {
 
           <header>
 
-            <ButtonChange onClick={toggleTheme}
+            <ButtonChange className='theme' onClick={toggleTheme}
             > {theme === "light" ? "DARK" : "LIGHT "}
             </ButtonChange>
             <Navbar />
@@ -70,6 +70,8 @@ export default function App() {
         <div className='pokemon-list-menu'>
           <Pokedex pokemons={pokemons} loading={loading} />
         </div>
+
+
       </Fragment>
     </ThemeProvider>
 
