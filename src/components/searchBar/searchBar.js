@@ -21,9 +21,8 @@ export const SearchBar = () => {
     }
 
     const [isOpen, setIsOpen] = useState(false);
-
     const togglePopup = () => {
-        setIsOpen(!isOpen);
+     setIsOpen(!isOpen);
     }
 
     return (
@@ -45,10 +44,11 @@ export const SearchBar = () => {
             {pokemon ? (
                 <div>
 
-                    <Popup content={
+                   {isOpen && <Popup content={
                         < div className="card-pokemon-stats">
+                           
                             <div className="pokemon-name-stats">
-                                <img src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name}></img>
+                                <img className="pokemon-name-stats-img " src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name}></img>
                                 <h4>Nome: {pokemon.name}</h4>
                                 <h4>Peso: {pokemon.weight}</h4>
 
@@ -66,12 +66,13 @@ export const SearchBar = () => {
                                 <h4> {pokemon.stats[1].stat.name}:{pokemon.stats[1].base_stat} </h4>
 
                             </div>
+                            
 
 
                         </div>
                     }
                         handleClose={togglePopup}
-                    />
+                    />}
                 </div>
             ) : null}
 

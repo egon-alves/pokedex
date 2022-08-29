@@ -10,7 +10,7 @@
 
 .box {
   position: relative;
-  width: 600px;
+  width: 650px;
   height: auto;
   margin: 0 auto;
   margin-top: calc(100vh - 85vh - 20px);
@@ -40,7 +40,11 @@
   
 }
 
-.pokemon-stats-list {
+.pokemon-stats-list { 
   width: 350px;
+  margin-left: 20px;
 }
 
+.pokemon-name-stats-img {
+  width: 200px;
+}
