@@ -1,6 +1,7 @@
 {
   "name": "pokedex",
   "version": "0.1.0",
+  " homepage": "pokedex/",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.18.13",
