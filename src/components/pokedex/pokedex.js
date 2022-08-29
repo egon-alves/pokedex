@@ -3,12 +3,12 @@ import "./pokedex.css"
 import { Pokemon } from "../pokemon/pokemon";
 export const Pokedex = (props) => {
     const { pokemons, loading } = props
-    
-    
+
+
     return (
         <div >
-            
-            {loading  || !pokemons ? (
+
+            {loading || !pokemons ? (
                 <div>Arguarde...</div>
             ) : (
                 <div className="pokemon-list">
@@ -16,9 +16,9 @@ export const Pokedex = (props) => {
                         (pokemon, index) => {
                             return (
                                 <div >
-                                <Pokemon pokemon={pokemon} key={index} /></div>
-                                
-                               
+                                    <Pokemon pokemon={pokemon} key={index} /></div>
+
+
                             )
                         }
                     )
