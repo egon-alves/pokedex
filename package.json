@@ -1,7 +1,7 @@
 {
   "name": "pokedex",
   "version": "0.1.0",
-  " homepage": "pokedex/",
+  " homepage": "pokebola/",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.18.13",
